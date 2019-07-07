@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
  * @version 1.0.0
  *
  */
-@Component
+// @Component
 public class CacheUpdater implements Runnable {
 
 	@Autowired

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import com.tangosol.net.CacheFactory;
 import com.tangosol.net.NamedCache;
 
-@Service
+// @Service
 public class CoherenceCacheService {
 
 	private NamedCache cache = null;
