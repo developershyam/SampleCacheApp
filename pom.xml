@@ -83,11 +83,11 @@
 		<!-- https://mvnrepository.com/artifact/com.oracle.coherence/coherence -->
 		<!-- http://javahonk.com/coherence-spring-integration/ -->
 		<!-- Coherence library(from local repository) -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.tangosol</groupId>
 			<artifactId>coherence</artifactId>
 			<version>3.7.0</version>
-		</dependency>
+		</dependency> -->
 		
 	</dependencies>
 

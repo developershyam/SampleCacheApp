@@ -46,3 +46,17 @@ You would be able to see keys stored in cache server
 
 Coherence config is commented as of now, If you want to enable make application changes and enable services.
 
+```bash
+Removed commented code for coherence cache and dependancies.
+```
+```bash
+If you are unable to install coherence jar
+Use maven install jar file using command
+jar provided in resources folder
+
+mvn install:install-file –Dfile=SampleCacheApp\src\main\resources\coherence-3.7.0.jar
+-DgroupId=coherence-3.7.0.jar
+-DartifactId=coherence
+-Dversion=3.7.0
+
+```
