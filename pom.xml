@@ -41,24 +41,6 @@
 			<optional>true</optional>
 		</dependency>
 
-		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-security</artifactId> 
-			</dependency> -->
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.hsqldb</groupId>
-			<artifactId>hsqldb</artifactId>
-		</dependency>
-
-		<!-- MySQL -->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-		</dependency>
 
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
@@ -75,17 +57,21 @@
 			<artifactId>joda-time</artifactId>
 		</dependency>
 
-		<!-- EH Cache -->
+		<!-- Spring Cache -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-cache</artifactId>
-		</dependency>
+		</dependency>		
 		<dependency>
 			<groupId>javax.cache</groupId>
 			<artifactId>cache-api</artifactId>
 		</dependency>
-		<!-- <dependency> <groupId>org.ehcache</groupId> <artifactId>ehcache</artifactId> 
-			</dependency> -->
+		
+		<!-- EH Cache -->
+		<dependency>
+			<groupId>org.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+		</dependency>
 
 		<!-- Redis Cache -->
 		<dependency>
@@ -93,22 +79,16 @@
 			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
 
-		<!-- Coherence library(from local repository) -->
-		<!-- <dependency> <groupId>com.tangosol</groupId> <artifactId>coherence</artifactId> 
-			<version>3.7.0</version> </dependency> -->
+		
 		<!-- https://mvnrepository.com/artifact/com.oracle.coherence/coherence -->
-
-
+		<!-- http://javahonk.com/coherence-spring-integration/ -->
 		<!-- Coherence library(from local repository) -->
 		<dependency>
 			<groupId>com.tangosol</groupId>
 			<artifactId>coherence</artifactId>
 			<version>3.7.0</version>
 		</dependency>
-
-
-		<!-- http://javahonk.com/coherence-spring-integration/ -->
-
+		
 	</dependencies>
 
 	<build>

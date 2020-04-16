@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.Date;
 
-public class TestLock {
+public class TestFileLock {
 
 	private static String FILENAME="./count.temp";
 	public static void main(String[] args) {

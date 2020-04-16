@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  *
  */
 // @Component
-public class CacheUpdater implements Runnable {
+public class CoherenceCacheUpdater implements Runnable {
 
 	@Autowired
 	CoherenceCacheService coherenceCacheService;
