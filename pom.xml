@@ -14,7 +14,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.1.RELEASE</version>
+		<version>2.1.0.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
@@ -31,10 +31,8 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-actuator-docs</artifactId>
-		</dependency>
+		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-actuator-docs</artifactId> 
+			</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -61,34 +59,73 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-cache</artifactId>
-		</dependency>		
+		</dependency>
 		<dependency>
 			<groupId>javax.cache</groupId>
 			<artifactId>cache-api</artifactId>
 		</dependency>
-		
+
 		<!-- EH Cache -->
 		<dependency>
 			<groupId>org.ehcache</groupId>
 			<artifactId>ehcache</artifactId>
 		</dependency>
 
-		<!-- Redis Cache -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-redis</artifactId>
+		</dependency>
 
-		
+
+		<!-- Jedis Redis Config -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-pool2</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+		</dependency>
+
+		<!-- Redission Redis Config -->
+		<dependency>
+			<groupId>org.redisson</groupId>
+			<artifactId>redisson</artifactId>
+			<version>3.13.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.redisson</groupId>
+			<artifactId>redisson-spring-data-21</artifactId>
+			<version>3.13.0</version>
+		</dependency>
+		<dependency>
+			<groupId>de.ruedigermoeller</groupId>
+			<artifactId>fst</artifactId>
+			<version>2.57</version>
+		</dependency>
+
+
+
 		<!-- https://mvnrepository.com/artifact/com.oracle.coherence/coherence -->
 		<!-- http://javahonk.com/coherence-spring-integration/ -->
 		<!-- Coherence library(from local repository) -->
-		<!-- <dependency>
-			<groupId>com.tangosol</groupId>
-			<artifactId>coherence</artifactId>
-			<version>3.7.0</version>
-		</dependency> -->
-		
+		<!-- <dependency> <groupId>com.tangosol</groupId> <artifactId>coherence</artifactId> 
+			<version>3.7.0</version> </dependency> -->
+
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+
+		<!-- <dependency> <groupId>com.google.code.gson</groupId> <artifactId>gson</artifactId> 
+			</dependency> -->
+
+
 	</dependencies>
 
 	<build>
